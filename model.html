@@ -28,73 +28,156 @@
 				Generative Adversarial Networks (GANs) and Variational Auto Encoders (VAEs).
 					<br>
 					<br>
-					Advantages of Light GBM and XG Boost are:
-					<br>
-					<br>
-					1.	Faster training speed and higher efficiency: Use histogram-based algorithm i.e it buckets 
-						continuous feature values into discrete bins which fasten the training procedure. <br><br>
-					2.	Lower memory usage: Replaces continuous values to discrete bins which result in lower memory usage. <br><br>
-					3.	Better accuracy than any other boosting algorithm: It produces much more complex trees by following leaf wise 
-						split approach rather than a level-wise approach which is the main factor in achieving higher accuracy. <br><br>
-					4.	Compatibility with Large Datasets: It is capable of performing equally good with large datasets with a significant 
-						reduction in training time. <br><br>
-	
-					
-					<br>
-					<div class= mod>
-					At first, models were created and trained. The modeling was done using Light GBM, XG Boost and multilayer perceptron
-					The ensemble learning methodology where 50% predictions of LGB and another 50% predictions of XGB were used to predict the customer loyalty scores. 
-
-						
+				
+					Generative Adversarial Networks (GAN).
+Generative adversarial networks (GANs) has been successfully applied to many for so many ways for data generation such as in images and natural language.
+<br><br>
+					VAEs have already shown promise in generating many kinds of complicated data, including handwritten digits, faces , house numbers [8,6], CIFAR images [9], physical models of scenes, segmentation , and predicting the future from static images.
+ <br><br>
+				
 					</div>
+					<br>
+			<strong> Training Loss for VAE. </strong>  <br>
+						Bar shows the type of buildings in the dataset.  <br> <br>
+							There are five types of buildings but the Single-Family Home is the most common
+
+									
+							<br>
+							<br>
+							
+							<img src = "model_loss_VAE.png" class="logo"
+							width = "100%"/>
+
+					<!-- </div> -->
 					
 					<br>
-					
+								<br>
+			<strong> Distribution plot for showing the reconstruction with california data  </strong>  <br>
+						Bar shows the type of buildings in the dataset.  <br> <br>
+							There are five types of buildings but the Single-Family Home is the most common
+
+									
+							<br>
+							<br>
+							
+							<img src = "v1.png" class="logo"
+							width = "25%"/>
+							
+							<img src = "v2.png" class="logo"
+							width = "25%"/>
+							<img src = "v3.png" class="logo"
+							width = "25%"/>
+							<img src = "v4.png" class="logo"
+							width = "25%"/>
+							<img src = "v5.png" class="logo"
+							width = "25%"/>
+							<img src = "v6.png" class="logo"
+							width = "25%"/>
+							<img src = "v7.png" class="logo"
+							width = "25%"/>
+							<img src = "v8.png" class="logo"
+							width = "25%"/>
+							<img src = "v9.png" class="logo"
+							width = "25%"/>
+							<img src = "v10.png" class="logo"
+							width = "25%"/>
+							<img src = "v11.png" class="logo"
+							width = "25%"/>
+							<img src = "v12.png" class="logo"
+							width = "25%"/>
+							<img src = "v13.png" class="logo"
+							width = "25%"/>
+							<img src = "v14.png" class="logo"
+							width = "25%"/>
+							<img src = "v15.png" class="logo"
+							width = "25%"/>
+							<img src = "v1.png" class="logo"
+							width = "25%"/>
+							<img src = "v1.png" class="logo"
+							width = "25%"/>
+
+					<!-- </div>
+					 -->
+
+
+					<br>
+								<br>
+			<strong> Distribution plot for showing the reconstruction with random noise data </strong>  <br>
+						Bar shows the type of buildings in the dataset.  <br> <br>
+							There are five types of buildings but the Single-Family Home is the most common
+
+									
+							<br>
+							<br>
+							
+							<img src = "fig2.png" class="logo"
+							width = "100%"/>
+							
+					<!-- </div> -->
+
+
+
+
+
+					<br>
+								<br>
+			<strong> Training Loss for VAE. </strong>  <br>
+						Bar shows the type of buildings in the dataset.  <br> <br>
+							There are five types of buildings but the Single-Family Home is the most common
+
+									
+							<br>
+							<br>
+							
+							<img src = "fig2.png" class="logo"
+							width = "100%"/>
+							
+					<!-- </div>
+					 -->
 						
+					<br>
+								<br>
+			<strong> Distribution plot for showing the reconstruction with california data with VAE. </strong>  <br>
+						Bar shows the type of buildings in the dataset.  <br> <br>
+							There are five types of buildings but the Single-Family Home is the most common
+
+									
+							<br>
+							<br>
+							
+							<img src = "fig2.png" class="logo"
+							width = "100%"/>
+							
+					<br>
+								<br>
+			<strong> Distribution plot for showing the reconstruction with random noise data with VAE. </strong>  <br>
+						Bar shows the type of buildings in the dataset.  <br> <br>
+							There are five types of buildings but the Single-Family Home is the most common
+
+									
+							<br>
+							<br>
+							
+							<img src = "fig2.png" class="logo"
+							width = "100%"/>
+							
 					
 						
 
-					
-				</div>
+					<!-- 
+				</div> -->
 			
 			<p>
-				<strong>Below histogram shows the important features listed by the model Light GBM.</strong> </p>
-				<br>
-				<img src = "Light.PNG" class="logo6"
-				width = "85%" />
-			
-			
-			<br>
-			<br>
-			
-			<p>
-				So, in this case, we are plotting the bar plots of the features to try to learn intellectually 
-				the importance of every feature in loyalty score prediction. We can see that most of the 
-				generated features are from historical variables. So, historical transactions are playing 
-				the most important role in predicting loyalty scores. </p>
-			
-			<p>
-				The feature importance was listed using LightGBM model. Historical purchase date, elapsed time, 
-				historical month lag minimum sum of historical installments, historical authorization flag mean, 
-				historical purchase amount were the variables which contributes most on predicting the loyalty score of 
-				customers. </p>
-			
-			<br>
-				<img src = "fig13.png" class="table"
-				width = "85%" />
-			
+				<strong>Conclusion.</strong> </p>
+				
 	
+			
 			<p>
-				LightGBM achieved the best results in train, validation compared to XG Boost. 
-				Also, Light GBM obtained the best train-time. XGBoost, on the other hand, took much more 
-				time (from minutes to hours), and didn't perform well in score either. The best submit score
-				is the ensemble that is 3.76.
-				<br>
-				<br>
-				From the above table, it shows that the RMSE for the training and the validation sets are 
-				very similar it indicates that the built model is a good model.
-			</p>
-
+				This paper proposed a method to generate synthetic Household Electrical appliance energy usage scenarios using Variational Autoencoder and GANs. The trained model is able to produce synthetic that follow the original data distribution without memorizing and that can be used for further analysis. 
+In the future, explore the use of Conditional  GANs and Conditional VAEs to produce data conditioned on a particular region/state. Also, add categorical variables such as building type, and city to generate them as they would be useful for forecasting and understanding the demographics of the regions.
+ </p>
+			
+			
 
 							
 							    
