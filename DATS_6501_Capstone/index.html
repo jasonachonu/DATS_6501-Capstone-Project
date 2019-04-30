@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html>
+	<head>
+		<!-- #<tile> Elo Mercahnt </tile> -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+	<body>
+
+		<div class = "main2">
+
+		<header>
+			<div class ="main">
+				<ul>
+					<li> <a href = "index.html">Home</a></li>
+					<li> <a href = "Dist.html">Exporatory Data Analysis</a></li>
+					<li> <a href = "model.html">Model / Evaluation</a></li>
+					
+				</ul>
+			</div>
+
+		</header>
+		<br>
+					
+					 
+				
+					<h2> OVERVIEW </h2>
+					<h3 align="center">INTRODUCTION</h3>
+					<P> Energy consumption is growing year on year worldwide with residential household electrical appliances make up about 34% to the total electricity consumption in the USA and is projected to increase to 39% by 2030 
+
+						Therefore, to meet up with the growing demand of electricity power companies need to build models to better forecast and plan the energy use; to achieve this they need an estimation of energy consumption at a household level. Energy consumption forecasting problem is a time series regression task, it consists of predicting the energy consumption for the future using by using a customer‘s historical electricity usage data to produce accurate forecasts to aid in planning and scheduling optimization requires a large amount of historical energy data. 
+Often in practical situations, the available historical data is not sufficient to capture the uncertainties in energy consumption; the setback in modeling the electrical consumption is the limitation of robust real-time data where generally a large amount of historical/forecasted generation and consumption data is required.
+
+
+ 					</P>
+
+
+					<h3 align="center"> AIM </h3>	
+		The aim of this project is to use a deep generative model using Generative Adversarial Networks (GANs) and Variational Auto Encoders (VAEs) to generate new realistic synthetic Electricity consumption data for different regions in the USA which can then be used with other statistical models for forecasting and analysis. </p>
+						
+					<h3 align="center"> APPROACH </h3>
+
+	         		 <p>
+	         .
+	         		 </p>
+	         		 <br>
+	         		
+
+
+
+	                  <h3 align="center">DATA DESCRIPTION</h3>
+	                  <p>The dataset used was retrieve from Pecan Street dataset (DATAPORT). The data consists of energy consumption readings at 1-minute, 5-minutes and 1-hour intervals collected. The data was available  from  2013 to 2019 for 7 states in the US from 1534 houses.
+	                  	<br><br><br>
+ In this project one the 1-hour interval reading was used from houses in California, Colorado and Texas for the year 2015 which amounted to 1467 households. The Model was trained using the Texas and Colorado data, while California Data used as the Validation set.
+The data consists of reading for 68 appliances, but only the top 15 with the most energy consumption were selected.  <br>
+
+	             	
+				
+					</p>
+
+					
+					
+					
+
+
+					<h3 align="center"> Data Preprocessing</h3>
+
+					<p>
+
+					<strong>Data cleaning</strong> - The dataset contains missing values, which resolved by grouping the categories by State, Month, Time of the day and then average, to replace the missing values.<br>
+					<strong>Data Normalization</strong> - To accelerate the training processes and to obtain good results, the dataset was to normalized to a range between 0 and 1. <br>
+					
+					 <br>
+	         		 <br>
+					
+
+
+		</div>
+
+	</body>		
+
+</html>
