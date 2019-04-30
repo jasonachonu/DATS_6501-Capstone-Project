@@ -1,2 +1,1 @@
-# DATS_6501-Capstone-Project
-DATS_6501-Capstone-Project on Data Generation
+### HTML and CSS File for Capstone Project DATS 6501

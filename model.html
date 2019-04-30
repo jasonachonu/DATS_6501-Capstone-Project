@@ -1,0 +1,109 @@
+<!doctype html>
+
+<html>
+	<head>
+		<!-- #<tile> Elo Mercahnt </tile> -->
+		<link rel="stylesheet" type="text/css" href="model.css">
+	<body>
+
+		<div class = "main2">
+
+		<header>
+			
+			
+			<div class ="main">
+
+				<ul>
+							<li> <a href = "index.html">Home</a></li>
+					<li> <a href = "Dist.html">EDA/Distribution</a></li>
+					<li> <a href = "model.html">Model & Evaluation</a></li>
+				</ul>
+			</div>
+		</header>
+				
+				<h2> MODEL </h2>
+				<div class= m1>
+					
+				Two Deep Generative models were used for this project.
+				Generative Adversarial Networks (GANs) and Variational Auto Encoders (VAEs).
+					<br>
+					<br>
+					Advantages of Light GBM and XG Boost are:
+					<br>
+					<br>
+					1.	Faster training speed and higher efficiency: Use histogram-based algorithm i.e it buckets 
+						continuous feature values into discrete bins which fasten the training procedure. <br><br>
+					2.	Lower memory usage: Replaces continuous values to discrete bins which result in lower memory usage. <br><br>
+					3.	Better accuracy than any other boosting algorithm: It produces much more complex trees by following leaf wise 
+						split approach rather than a level-wise approach which is the main factor in achieving higher accuracy. <br><br>
+					4.	Compatibility with Large Datasets: It is capable of performing equally good with large datasets with a significant 
+						reduction in training time. <br><br>
+	
+					
+					<br>
+					<div class= mod>
+					At first, models were created and trained. The modeling was done using Light GBM, XG Boost and multilayer perceptron
+					The ensemble learning methodology where 50% predictions of LGB and another 50% predictions of XGB were used to predict the customer loyalty scores. 
+
+						
+					</div>
+					
+					<br>
+					
+						
+					
+						
+
+					
+				</div>
+			
+			<p>
+				<strong>Below histogram shows the important features listed by the model Light GBM.</strong> </p>
+				<br>
+				<img src = "Light.PNG" class="logo6"
+				width = "85%" />
+			
+			
+			<br>
+			<br>
+			
+			<p>
+				So, in this case, we are plotting the bar plots of the features to try to learn intellectually 
+				the importance of every feature in loyalty score prediction. We can see that most of the 
+				generated features are from historical variables. So, historical transactions are playing 
+				the most important role in predicting loyalty scores. </p>
+			
+			<p>
+				The feature importance was listed using LightGBM model. Historical purchase date, elapsed time, 
+				historical month lag minimum sum of historical installments, historical authorization flag mean, 
+				historical purchase amount were the variables which contributes most on predicting the loyalty score of 
+				customers. </p>
+			
+			<br>
+				<img src = "fig13.png" class="table"
+				width = "85%" />
+			
+	
+			<p>
+				LightGBM achieved the best results in train, validation compared to XG Boost. 
+				Also, Light GBM obtained the best train-time. XGBoost, on the other hand, took much more 
+				time (from minutes to hours), and didn't perform well in score either. The best submit score
+				is the ensemble that is 3.76.
+				<br>
+				<br>
+				From the above table, it shows that the RMSE for the training and the validation sets are 
+				very similar it indicates that the built model is a good model.
+			</p>
+
+
+							
+							    
+
+
+
+
+		</div>
+
+	</body>		
+
+</html>
